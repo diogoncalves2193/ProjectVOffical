@@ -7,7 +7,7 @@ public class Teleport : MonoBehaviour
     public Transform teleportTarget;
     public GameObject thePlayer;
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
         Debug.Log("TELEPORT");
         thePlayer.transform.position = teleportTarget.transform.position;
